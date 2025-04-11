@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-category.css">
+    <title>ADMIN</title>
+</head>
+<body>
+    <header>
+        <div class="textBig">
+            <h2>QUẢN LÝ THÔNG TIN THỂ LOẠI</h2>
+        </div>
+        <div class="textSmall">
+            <h4>Trạng thái: ADMIN</h4>
+        </div>
+    </header>
+    <section>
+        <div class="addCate">
+            <button class="">
+                <p>Thêm thể loại</p>
+            </button>
+        </div>
+        <div class="list-Cate">
+            <h2>Danh sách các thể loại: </h2>
+            <ul>
+                <li>
+                    <div class="text">
+                        <p>Tên thể loại: Rock</p>
+                        <p>Mô tả: có tiết tấu mạnh và nhanh, thường sử dụng các loại nhạc cụ điện tử. </p>
+                    </div>
+                    <button class="addInList">
+                        <p>Danh sách bài hát</p>
+                    </button>
+                    <button>
+                        <p>Xóa thể loại</p>
+                    </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <p>Tên thể loại: Dance</p>
+                        <p>Mô tả: nhạc thường dùng để nhảy, múa là chính nhưng người ta cũng có thể dùng để nghe, lồng ghép… </p>
+                    </div>
+                    <button>
+                        <p>Danh sách bài hát</p>
+                    </button>
+                    <button>
+                        <p>Xóa thể loại</p>
+                    </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <p>Tên thể loại: Pop</p>
+                        <p>Mô tả: nhạc đương đại và rất thường nhật trong làng nhạc đại chúng </p>
+                    </div>
+                    <button>
+                        <p>Danh sách bài hát</p>
+                    </button>
+                    <button>
+                        <p>Xóa thể loại</p>
+                    </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <p>Tên thể loại: Ballad</p>
+                        <p>Mô tả: ca từ nhẹ nhàng và xoa dịu cảm xúc người nghe mỗi khi thưởng thức.</p>
+                    </div>
+                    <button>
+                        <p>Danh sách bài hát</p>
+                    </button>
+                    <button>
+                        <p>Xóa thể loại</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="formCate">
+        <div class="showAddCate">
+            <h3>Vui lòng nhập đầy đủ các thông tin !</h3>
+            <div class="nhap">
+                <p>Nhập tên thể loại: </p>
+                <input type="text">
+            </div>
+            <div class="nhap">
+                <p>Nhập mô tả thể loại: </p>
+                <input type="text">
+            </div>
+            <div class="ShowButton">
+                <button>
+                    <p>Thêm</p>
+                </button>
+                <div class="closeFormCate">
+                    <button>
+                        <p>Hủy</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showCate">
+        <div class="DsCate">
+            <div class="Timkiem">
+                <h3>Danh sách các sản phẩm: </h3>
+                <input type="text" name="" id="" placeholder="Nhập mã sản phẩm để thêm vào danh sách">
+            </div>
+            <div class="listSanPham">
+                <ul>
+                    <li>
+                        <div class="avt"><img src="./img/song1.jpg" alt=""></div>
+                        <div class="info">
+                            <p>Tên sản phẩm: Cứ chill thôi</p>
+                            <p>Tác giả: Hạ Linh</p>
+                        </div>
+                        <button class="buttonSua"><p>Xóa</p></button>
+                    </li>
+                    <li>
+                        <div class="avt"><img src="./img/song2.jpg" alt=""></div>
+                        <div class="info">
+                            <p>Tên sản phẩm: Crush</p>
+                            <p>Tác giả: An An x Vani</p>
+                        </div>
+                        <button class="buttonSua"><p>Xóa</p></button>
+                    </li>
+                    <li>
+                        <div class="avt"><img src="./img/song3.jpg" alt=""></div>
+                        <div class="info">
+                            <p>Tên sản phẩm: Vô tình</p>
+                            <p>Tác giả: Xesi</p>
+                        </div>
+                        <button class="buttonSua"><p>Xóa</p></button>
+                    </li>
+                    <li>
+                        <button class="closeList">
+                            <p>Close</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const openCate = document.querySelector('.addCate')
+        const formCate = document.querySelector('.formCate')
+        const closeCate = document.querySelector('.closeFormCate')
+
+        openCate.addEventListener('click', function(){
+            formCate.classList.add("open")
+        })
+
+        closeCate.addEventListener('click', function(){
+            formCate.classList.remove("open")
+        })
+
+
+        const addList = document.querySelector('.addInList')
+        const showCate = document.querySelector('.showCate')
+        const closeList = document.querySelector('.closeList')
+
+        addList.addEventListener('click', function(){
+            showCate.classList.add("open")
+        })
+
+        closeList.addEventListener('click', function(){
+            showCate.classList.remove("open")
+        })
+
+    </script>
+</body>
+</html>

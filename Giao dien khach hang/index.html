@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Du An Zing MP3</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="theme">
+            <img src="./img/theme1.jpg" alt="" id="theme">
+        </div>
+        <div class="theme-background">
+            <div class="close">
+                <h2>Giao Diện</h2>
+                <i class="bi bi-x-lg" id="close"></i>
+            </div>
+            <div class="topic">
+                <h3>Chủ Đề</h3>
+            </div>
+            <div class="topic-theme artist">
+                <div class="artist-1">
+                    <img src="./img/theme12.svg" alt="" class="topic-1">
+                    <button id="active-theme" class="tptheme1" onclick="changeBodyBg('yellow');">Áp Dụng</button>
+                </div>
+                <div class="artist-1">
+                    <img src="./img/theme12.svg" alt="" class="topic-1">
+                    <button id="active-theme" class="tptheme2">Áp Dụng</button>
+                </div>
+                <div class="artist-1">
+                    <img src="./img/theme12.svg" alt="" class="topic-1">
+                    <button id="active-theme" class="tptheme2">Áp Dụng</button>
+                </div>
+                <div class="artist-1">
+                    <img src="./img/theme12.svg" alt="" class="topic-1">
+                    <button id="active-theme" class="tptheme2">Áp Dụng</button>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Nghệ sĩ</h3>
+            </div>
+            <div class="artist">
+                <div class="artist-1"><img src="./img/theme1.jpg" alt="">
+                    <button id="active-theme" class="theme1">Áp Dụng</button>
+                </div>
+                <div class="artist-1"><img src="./img/theme2.jpg" alt="">
+                    <button id="active-theme" class="theme2">Áp Dụng</button>
+                </div>
+                <div class="artist-1"><img src="./img/theme3.jpg" alt="">
+                    <button id="active-theme" class="theme3">Áp Dụng</button>
+                </div>
+                <div class="artist-1"><img src="./img/theme4.jpg" alt="">
+                    <button id="active-theme" class="theme4">Áp Dụng</button>
+                </div>
+            </div>
+            <div class="tones"></div>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="./img/logo-web.png" alt="">
+            </div>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" id="search" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+            </div>
+            <div class="setting">
+                <div class="back-change border" onclick="changebackgr()">
+                    <i class="bi bi-emoji-sunglasses"></i>
+                </div>
+                <div class="upload border">
+                    <i class="bi bi-upload"></i>
+                </div>
+                <div class="setting border opensetting">
+                    <i class="bi bi-gear"></i>
+                    <div class="settingOpen">
+                        <div class="setting-menu">
+                            <div class="menu-setting-1">
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-shield-exclamation"></i>Danh sách chặn</a></li>
+                                    <li><a href="#"><i class="bi bi-badge-hd"></i>Chất lượng nhạc</a></li>
+                                    <li><a href="#"><i class="bi bi-play-circle"></i>Trình phát nhạc</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-setting-2">
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-exclamation-circle"></i>Giới thiệu</a></li>
+                                    <li><a href="#"><i class="bi bi-flag"></i>Góp ý</a></li>
+                                    <li><a href="#"><i class="bi bi-telephone"></i>Liên hệ</a></li>
+                                    <li><a href="#"><i class="bi bi-badge-ad"></i>Quảng cáo</a></li>
+                                    <li><a href="#"><i class="bi bi-file-text"></i>Thoải thuận người dùng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar border">
+                    <img src="./img/avtfbb.jpg" alt="">
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="menu-col">
+                <div class="menu-col-1">
+                    <ul>
+                        <li><a href="#">
+                                <i class="bi bi-person-square"></i>
+                                <p>Cá Nhân</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="bi bi-record-circle"></i>
+                                <p>Khám Phá</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="bi bi-music-note-list"></i>
+                                <p>zingchart</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="bi bi-broadcast"></i>
+                                <p>Radio</p>
+                                <i class="bi bi-play-btn-fill"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="bi bi-calendar-heart"></i>
+                                <p>Theo Dõi</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="menu-croll">
+                    <div class="menu-col-1">
+                        <ul>
+                            <li><a href="#">
+                                    <i class="bi bi-person-square"></i>
+                                    <p>Cá Nhân</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="bi bi-record-circle"></i>
+                                    <p>Khám Phá</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="bi bi-music-note-list"></i>
+                                    <p>zingchart</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="bi bi-broadcast"></i>
+                                    <p>Radio</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="bi bi-calendar-heart"></i>
+                                    <p>Theo Dõi</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-col-2">
+                        <ul>
+                            <h4>Thư Viện</h4>
+                            <li><a href="#">
+                                <img src="./img/vector2.svg" alt="">
+                                <p>Bài Hát</p>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./img/vector3.svg" alt="">
+                                <p>Playlist</p>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./img/vector4.svg" alt="">
+                                <p>Gần Đây</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="code-vip">
+                    <button class="buy-code"><p>Mua vip ngay</p></button>
+                    <button class="enter-code"><p>Nhập code vip</p></button>
+                </div>
+                <div class="container-main-avt">
+                    <div class="avt-website">
+                        <img src="./img/avt-web.jpg" alt="">
+                    </div>
+                    <h1>13 MUSIC</h1>
+        
+                </div>
+                <div class="container-main-menu-list">
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="#">TỔNG QUAN</a></li>
+                            <li><a href="#">BÀI HÁT</a></li>
+                            <li><a href="#">PLAYLIST</a></li>
+                            <li><a href="#">ALBUM</a></li>
+                            <li><a href="#">MV</a></li>
+                            <li><a href="#">NGHỆ SĨ</a></li>
+                            <li><a href="#">TẢI LÊN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="foot">
+            <div class="foot_left">
+                <div class="foot_left-img">
+                    <img src="./img/album1.jpg" alt="">
+
+                </div>
+                <div class="foot_left-nd">
+                    <h5>tdbh</h5>
+                    <p>thong tin ca si</p>
+                </div>
+            </div>
+            <div class="foot_center"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

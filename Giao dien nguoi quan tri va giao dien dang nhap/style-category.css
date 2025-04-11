@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.textBig{
+    width: 70%;
+    height: 100%;
+    line-height: 10vh;
+    padding-left: 50px;
+}
+.textSmall{
+    width: 30%;
+    height: 100%;
+    line-height: 10vh;
+    padding-left: 50%;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    display: block;
+    justify-content: space-evenly;
+    background-color: rgb(228, 228, 228);
+}
+
+.list-Cate{
+    width: 100%;
+    padding-left: 0px;
+}
+
+.list-Cate ul{
+    display: block;
+    width: 100%;
+    padding: 0px;
+}
+
+.list-Cate ul li{
+    display: flex;
+    padding: 10px;
+    /* width: 100%; */
+    list-style-type: none;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.list-Cate ul li .text{
+    display: block;
+    width: 60%;
+    height: 50px;
+    line-height: 25px;
+}
+
+.list-Cate ul li button{
+    margin-left: 30px;
+    width: 150px;
+    display: block;
+    cursor: pointer;
+}
+
+.addCate{
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.addCate button{
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+h2{
+    padding-left: 20px;
+}
+
+.formCate{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.formCate.open{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.showAddCate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    padding: 100px;
+    border-radius: 15px;
+    border-color: #000;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+}
+
+.showAddCate h3{
+    margin-bottom: 50px;
+}
+
+.showAddCate .nhap{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.showAddCate .nhap p{
+    width: 200px;
+}
+
+.showAddCate .nhap input{
+    height: 40px;
+}
+
+.ShowButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.ShowButton button{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.showCate{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.showCate.open{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.DsCate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    padding: 40px;
+    width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+    border-color: #000;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+}
+
+.Timkiem{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+.listSanPham{
+    width: 100%;
+    display: block;
+}
+
+.listSanPham ul{
+    display: block;
+    width: 100%;
+}
+
+.listSanPham ul li{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.listSanPham ul li img{
+    width: 30%;
+}
+
+.listSanPham ul li .info{
+    display: block;
+    width: 60%;
+    height: 70px;
+    line-height: 35px;
+}
+.listSanPham ul li .avt{
+    display: block;
+    width: 20%;
+}
+.listSanPham ul li button{
+    display: block;
+    width: 20%;
+    cursor: pointer;
+}

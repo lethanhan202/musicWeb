@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style-user.css">
+    <title>ADMIN</title>
+</head>
+
+<body>
+    <header>
+        <div class="textBig">
+            <h2>QUẢN LÝ THÔNG TIN USER</h2>
+        </div>
+        <div class="textSmall">
+            <h4>Trạng thái: ADMIN</h4>
+        </div>
+    </header>
+    <section>
+        <div class="search">
+            <h3>Danh sách người dùng: </h3>
+            <input type="text" class="Timkiem" id="" name="" placeholder="Nhập mã người dùng để tìm kiếm">
+        </div>
+        <div class="Ds">
+            <ul>
+                <li>
+                    <div class="text">
+                        <p>Mã người dùng: 0001</p>
+                        <p>Tên tài khoản: tuannguyen</p>
+                    </div>
+                    <button class="openInfo">
+                        <P>Xem thông tin</P>
+                    </button>
+                    <button class="XoaInfo">
+                        <p>Xóa</p>
+                    </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <p>Mã người dùng: 0002</p>
+                        <p>Tên tài khoản: baonguyen</p>
+                    </div>
+                    <button class="">
+                        <P>Xem thông tin</P>
+                    </button>
+                    <button class="XoaInfo">
+                        <p>Xóa</p>
+                    </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <p>Mã người dùng: 0003</p>
+                        <p>Tên tài khoản: vanhnguyen</p>
+                    </div>
+                    <button class="">
+                        <P>Xem thông tin</P>
+                    </button>
+                    <button class="XoaInfo">
+                        <p>Xóa</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="showInfo">
+        <div class="Info">
+            <h2>Thông tin khách hàng: </h2>
+            <ul>
+                <li>
+                    <p>Mã người dùng: 0001</p>
+                </li>
+                <li>
+                    <p>Tên tài khoản: tuannguyen</p>
+                </li>
+                <li>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </li>
+                <li>
+                    <p>Ngày sinh: 01/01/2002</p>
+                </li>
+                <li>
+                    <p>Trạng thái: người dùng vip</p>
+                </li>
+                <button class="closeInfo">
+                    <p>Close</p>
+                </button>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const openInfo = document.querySelector('.openInfo');
+        const Info = document.querySelector('.showInfo');
+        const closeInfo = document.querySelector('.closeInfo');
+
+        openInfo.addEventListener('click', function () {
+            Info.classList.add("open");
+        })
+
+        closeInfo.addEventListener('click', function () {
+            Info.classList.remove("open");
+        })
+
+    </script>
+</body>
+
+</html>
